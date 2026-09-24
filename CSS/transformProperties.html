@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: skyblue;
+
+            /* transform: translateX(200px); */
+            /* transform: translateY(150px); */
+            /* transform: translate(100px ,150px); */
+
+
+            /* transform: scaleX(0.5);
+            transform: scaleY(0.5); */
+            /* transform: scale(2,2); */
+
+
+            /* transform: rotate(360deg); */
+
+            /* transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: linear; */
+            /* transition-delay: 2s; */
+
+            transition: all 5s linear ;
+
+        }
+
+        div:hover{
+            /* transform: translateX(150px); */
+            transform: rotate(360deg) translate(150px,100px);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Hello ALL
+    </div>
+</body>
+</html>

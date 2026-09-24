@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #navabarContainer {
+            height: 60px;
+            width: 100%;
+            background-color: coral;
+            display: flex;
+        }
+
+        .logo {
+            height: 60px;
+            flex-basis: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .menu {
+            height: 60px;
+            flex-basis: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .menu a{
+            color: aliceblue;
+            font-size: large;
+            text-decoration: none;
+        }
+        a button{
+            height: 25px;
+            width: 80px;
+            border-radius: 25px;
+            border: none;
+            background-color: rgba(107, 20, 206, 0.98);
+            color: aliceblue;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navabarContainer">
+        <aside class="logo">
+            <img src="https://brandmark.io/logo-rank/random/bp.png" alt="">
+        </aside>
+        <aside class="menu">
+            <a href="">Home Page</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+            <a href="">Profile</a>
+            <a href=""> <button>Login</button></a>
+            <a href=""><button>Signup</button></a>
+        </aside>
+    </nav>
+</body>
+
+</html>
