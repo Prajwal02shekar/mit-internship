@@ -42,31 +42,59 @@
 // }
 //! Switch
 
-let n1=15;
-let n2=3;
+// let n1=15;
+// let n2=3;
 
-let operator="**"
+// let operator="**"
 
-switch(operator){
-    case "+":
-        console.log(n1+n2)
-        break;
-    case "-":
-        console.log(n1-n2)
-        break;
-    case "*":
-        console.log(n1*n2)
-        break;
-    case "/":
-        console.log(n1/n2)
-        break;
-    case "%":
-        console.log(n1%n2)
-        break;
-    case "**":
-        console.log(n1**n2)
-        break;
-    default:
-        console.log("Invalid Operator")
-}
+// switch(operator){
+//     case "+":
+//         console.log(n1+n2)
+//         break;
+//     case "-":
+//         console.log(n1-n2)
+//         break;
+//     case "*":
+//         console.log(n1*n2)
+//         break;
+//     case "/":
+//         console.log(n1/n2)
+//         break;
+//     case "%":
+//         console.log(n1%n2)
+//         break;
+//     case "**":
+//         console.log(n1**n2)
+//         break;
+//     default:
+//         console.log("Invalid Operator")
+// }
 //? Looping Statements
+
+//? while
+
+// let n=5;
+// while(n>=1){
+//     console.log(n);
+//     n--
+// }
+
+
+//? do 
+
+// let n=10;
+// do{
+//     console.log(n);
+//     n--;
+// }while(n>=1)
+
+
+//? for
+
+for(let i=0;i<=10;i++){
+    console.log(i)
+}
+console.log("******")
+for(let i=10;i>=1;i--){
+    console.log(i)
+}

@@ -68,10 +68,12 @@
 
 //! const
 
-const c=10;
-console.log(c)
+// const c=10;
+// console.log(c)
 
 
 // const c;
-c=30;
-console.log(c)
+// c=30;
+// console.log(c)
+
+
