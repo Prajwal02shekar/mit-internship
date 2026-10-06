@@ -201,7 +201,6 @@ function transfer(amount){
 function bank(amount,operation){
     operation(amount)
 }
-
 bank(1000,deposit)
 bank(500,transfer)
 bank(300,withdraw)
