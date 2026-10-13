@@ -210,15 +210,17 @@
 
 //! async and await
 
-async function getUserData(){
-    let res=await fetch('https://api.github.com/users')
-    console.log(res)
+// async function getUserData(){
+//     let res=await fetch('https://api.github.com/users')
+//     console.log(res)
 
-    let data=await res.json()
-    console.log(data)
+//     let data=await res.json()
+//     console.log(data)
 
-    data.map((user)=>{
-        console.log(user.login)
-    })
-}
-getUserData()
+//     data.map((user)=>{
+//         console.log(user.login)
+//     })
+// }
+// getUserData()
+
+
