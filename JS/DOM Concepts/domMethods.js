@@ -63,8 +63,8 @@
 
 
 
-let para=document.querySelectorAll('p')
-console.log(para)
-para.forEach((ele)=>{
-    console.log(ele)
-})
+// let para=document.querySelectorAll('p')
+// console.log(para)
+// para.forEach((ele)=>{
+//     console.log(ele)
+// })
