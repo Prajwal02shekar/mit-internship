@@ -36,6 +36,7 @@ img.src="https://avatars.githubusercontent.com/u/160094074?v=4"
 
 console.log(h2,p1,img)
 
+
 section.append(h2,p1,img)
 
 
