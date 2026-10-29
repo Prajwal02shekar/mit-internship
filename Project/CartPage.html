@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            background-color: crimson;
+        }
+
+        .logo {
+            font-size: 20px;
+            color: aliceblue;
+            font-style: italic;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-items a,
+        .nav-items span {
+            margin: 0 15px;
+            text-decoration: none;
+            color: antiquewhite;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .nav-items a:hover,
+        .nav-items span:hover {
+
+            color: cornsilk;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            display: none;
+            max-height: 150px;
+            background-color: aliceblue;
+            color: black;
+            top: 20px;
+            border-radius: 20px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 5px;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .searchBox {
+            display: flex;
+            align-items: center;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .searchBox input {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 15px;
+            width: 280px;
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-right img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: 0 15px;
+        }
+
+        #productContainer {
+            /* height: 100vh;
+            width: 100%; */
+
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 10px;
+
+        }
+
+        .productCard {
+            height: 350px;
+            width: 250px;
+            border: 2px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 15px;
+            box-shadow: 0 0 5px gray;
+            transition: all 0.6s linear;
+
+        }
+
+        .productCard:hover {
+            transform: scale(1.03);
+        }
+
+        .productCard img {
+            height: 150px;
+            width: 150px;
+            border-radius: 25px;
+        }
+
+        .productCard button {
+            height: 30px;
+            width: 120px;
+            border: none;
+            background-color: orangered;
+            color: aliceblue;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <aside class="logo">
+            <h2>Shopping Cart</h2>
+        </aside>
+        <aside class="nav-items">
+            <a href="./HomePage.html">Home Page</a>
+            <div class="dropdown">
+                <span>Category</span>
+                <div class="dropdown-content">
+                    <a href="">Mobiles</a>
+                    <a href="">Laptops</a>
+                    <a href="">Watches</a>
+                    <a href="">TV</a>
+                </div>
+            </div>
+            <a href="">About Us</a>
+        </aside>
+
+        <aside class="searchBox">
+            <input type="search" id="search" onkeyup="searchFilter()" placeholder="Search a Product.....">
+        </aside>
+
+        <aside class="nav-right">
+            <img src="" alt="Profile" id="profile">
+            <a href="./CartPage.html">Cart 🛒 <span id="cartCount"></span> </a>
+        </aside>
+    </nav>
+
+    <!-- Product Conatiner -->
+    <h2>Your Cart Items</h2>
+    <section id="productContainer">
+
+    </section>
+
+    <!-- Cart Summary -->
+    <section class="cartSummary">
+        <h2 id="total"></h2>
+        <div class="cartBtns">
+            <button onclick="checkout()">Order Now</button>
+            <button onclick="clearCart()">Clear Cart</button>
+        </div>
+    </section>
+</body>
+<script src="./CartPage.js"></script>
+
+</html>

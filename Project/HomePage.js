@@ -1,5 +1,4 @@
 let userData = JSON.parse(localStorage.getItem('userData'))
-
 console.log(userData)
 
 let profile = document.getElementById('profile')
@@ -139,14 +138,18 @@ function searchCategory(cat) {
 }
 
 
-function addTocart(id){
-    let cart=JSON.parse(localStorage.getItem('cart'))||[]
+function addTocart(id) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || []
     console.log(cart)
 
-    let item=allProducts.find((p)=>p.id===id)
+    let item = allProducts.find((p) => p.id === id)
     cart.push(item)
 
     alert(`${item.productName} added to cart`)
 
-    localStorage.setItem('cart',JSON.stringify(cart))
+    localStorage.setItem('cart', JSON.stringify(cart))
 }
+
+let cart = JSON.parse(localStorage.getItem('cart')) || []
+let cartCount = document.getElementById('cartCount')
+cartCount.innerText=`${cart.length}`
